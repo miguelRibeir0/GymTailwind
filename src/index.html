@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eletric Edge</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/60d8198cd6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="box-border bg-black text-white">
+    <nav class="m-12 flex justify-between shadow-sm">
+      <a href=""
+        ><i class="fa-solid fa-dumbbell fa-xl hover:text-green-400"></i
+      ></a>
+      <ul class="flex gap-x-8">
+        <li>
+          <a class="text-lg hover:text-green-400" href="">Products</a>
+        </li>
+        <li>
+          <a class="text-lg hover:text-green-400" href="">Features</a>
+        </li>
+        <li>
+          <a class="text-lg hover:text-green-400" href="">Pricing</a>
+        </li>
+        <li>
+          <a class="text-lg hover:text-green-400" href="">About</a>
+        </li>
+        <li>
+          <a class="text-lg hover:text-green-400" href="">Locations</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section
+        id="landing-banner"
+        class="relative flex h-main w-full flex-row-reverse items-end bg-landing bg-cover bg-top bg-no-repeat sm:bg-landing md:bg-landing lg:bg-landing2 lg:bg-top-4"
+      >
+        <span
+          class="absolute h-full w-full bg-gradient-to-b from-transparent to-black"
+        ></span>
+        <p
+          class="absolute mb-40 mr-20 font-Bebas text-2xl uppercase md:text-3xl lg:text-4xl"
+        >
+          <span class="rounded-lg border-2 border-green-400 p-1"
+            >Daily Classes from 8am to 23pm</span
+          >
+        </p>
+        <h2
+          class="absolute mb-20 mr-20 font-Bebas text-6xl uppercase md:text-6xl lg:text-8xl"
+        >
+          Elevate your training
+        </h2>
+      </section>
+
+      <section
+        id="personal-training"
+        class="mx-auto mt-20 flex h-main w-2/4 flex-col items-center justify-end gap-y-10"
+      >
+        <div>
+          <span
+            class="inline rounded-lg border-2 border-green-400 bg-black px-2 py-1 text-lg font-bold text-white"
+            >Personal Training</span
+          >
+          <h2 class="mb-2 mt-8 font-Kanit text-3xl font-bold uppercase">
+            Achieve your fitness goals with personalized training
+          </h2>
+          <p class="mb-8 w-auto">
+            Our certified personal trainers will create a customized workout
+            plan tailored to your needs, ensuring you get the most out of every
+            session.
+          </p>
+          <button
+            class="rounded border-2 border-white bg-white px-2 py-1 font-bold text-black hover:bg-slate-100"
+          >
+            Contact Sales
+          </button>
+          <button
+            class="ml-3 rounded border-2 border-slate-50 px-2 py-1 font-bold"
+          >
+            Learn More
+          </button>
+        </div>
+        <img
+          class="h-96 w-full rounded object-cover object-top shadow-sm"
+          src="../images/landing.jpg"
+        />
+      </section>
+
+      <section
+        id="group-classes"
+        class="mx-auto mt-40 flex h-main w-2/4 flex-col items-center justify-end gap-y-10"
+      >
+        <div>
+          <span
+            class="inline rounded-lg border-2 border-green-400 bg-black px-2 py-1 text-lg font-bold text-white"
+            >Group Classes</span
+          >
+          <h2 class="mb-2 mt-8 font-Kanit text-3xl font-bold uppercase">
+            Embrace the power of community
+          </h2>
+          <p class="mb-8 w-auto">
+            Our group fitness classes are designed to be fun, engaging, and
+            effective. Whether you're into high-intensity interval training,
+            yoga, or spinning, we've got the perfect class for you.
+          </p>
+          <button class="rounded border-2 border-slate-50 px-2 py-1 font-bold">
+            Learn More
+          </button>
+        </div>
+        <!-- Carousel -->
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../images/slide1.jpg"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../images/slide2.jpg"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../images/slide3.jpg"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="../images/slide4.jpg"
+                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider -->
+          <div
+            class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="h-3 w-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+          </div>
+          <!-- Btns -->
+          <button
+            type="button"
+            class="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-green-400 bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-green-400/70"
+            >
+              <svg
+                class="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-green-400 bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-green-400 dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-green-400/70"
+            >
+              <svg
+                class="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        id="get-started"
+        class="mx-auto mt-20 flex h-96 w-2/4 flex-col items-center justify-center gap-y-10"
+      >
+        <div class="flex flex-col items-center">
+          <h2 class="mb-5 mt-8 font-Kanit text-3xl font-bold uppercase">
+            Ready to
+            <span class="rounded-lg border-2 border-green-400 p-1"
+              >get started</span
+            >
+            ?
+          </h2>
+          <p class="mb-8 text-center">
+            Provide us with your email and we will send all the information you
+            need to get started!
+          </p>
+          <div>
+            <label for=""></label>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="w-60 text-gray-950 caret-green-400 selection:bg-green-400"
+            />
+            <button
+              class="ml-3 h-full rounded bg-white px-5 py-1 font-bold text-black hover:bg-slate-100"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="m-6 flex justify-between">
+      <p>©Fictional Project, this brand does not exist.</p>
+      <ul class="flex gap-x-8">
+        <li><a href="" class="hover:text-green-400">Terms of Service</a></li>
+        <li><a href="" class="hover:text-green-400">Privacy</a></li>
+      </ul>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
