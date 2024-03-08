@@ -25,47 +25,134 @@
     ></script>
   </head>
 
-  <body class="box-border bg-black text-white">
-    <nav class="m-12 flex justify-between shadow-sm">
+  <body class="box-border bg-black font-Kanit text-white">
+    <nav
+      class="mx-5 mb-12 mt-12 flex items-center justify-between shadow-sm sm:m-12"
+    >
+      <div id="hamburguer" class="md:hidden">
+        <button
+          data-collapse-toggle="navbar-hamburger"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-green-400"
+          aria-controls="navbar-hamburger"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="h-5 w-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="absolute left-0 top-24 z-10 hidden w-full"
+        id="navbar-hamburger"
+      >
+        <ul class="mt-4 flex flex-col rounded-lg bg-gray-50 font-medium">
+          <li>
+            <a
+              href="#"
+              class="rounde block px-3 py-4 text-gray-900 focus:bg-green-400"
+              aria-current="page"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block rounded px-3 py-4 text-gray-900 focus:bg-green-400"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block rounded px-3 py-4 text-gray-900 focus:bg-green-400"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block rounded px-3 py-4 text-gray-900 focus:bg-green-400"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block rounded px-3 py-4 text-gray-900 focus:bg-green-400"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+
       <a href=""
-        ><i class="fa-solid fa-dumbbell fa-xl hover:text-green-400"></i
+        ><i
+          class="fa-solid fa-dumbbell fa-xl w-10 text-center transition-colors hover:text-green-400"
+        ></i
       ></a>
-      <ul class="flex gap-x-8">
+
+      <ul class="hidden gap-x-8 md:visible md:flex">
         <li>
-          <a class="text-lg hover:text-green-400" href="">Products</a>
+          <a class="text-lg transition-colors hover:text-green-400" href=""
+            >Products</a
+          >
         </li>
         <li>
-          <a class="text-lg hover:text-green-400" href="">Features</a>
+          <a class="text-lg transition-colors hover:text-green-400" href=""
+            >Features</a
+          >
         </li>
         <li>
-          <a class="text-lg hover:text-green-400" href="">Pricing</a>
+          <a class="text-lg transition-colors hover:text-green-400" href=""
+            >Pricing</a
+          >
         </li>
         <li>
-          <a class="text-lg hover:text-green-400" href="">About</a>
+          <a class="text-lg transition-colors hover:text-green-400" href=""
+            >About</a
+          >
         </li>
         <li>
-          <a class="text-lg hover:text-green-400" href="">Locations</a>
+          <a class="text-lg transition-colors hover:text-green-400" href=""
+            >Locations</a
+          >
         </li>
       </ul>
+
+      <span class="w-10 md:hidden"></span>
     </nav>
 
     <main>
       <section
         id="landing-banner"
-        class="relative flex h-main w-full flex-row-reverse items-end bg-landing bg-cover bg-top bg-no-repeat sm:bg-landing md:bg-landing lg:bg-landing2 lg:bg-top-4"
+        class="relative flex h-largescreen w-full flex-row-reverse items-end bg-landing bg-cover bg-top bg-no-repeat lg:bg-landing2 lg:bg-top-4 xl:h-main"
       >
         <span
           class="absolute h-full w-full bg-gradient-to-b from-transparent to-black"
         ></span>
         <p
-          class="absolute mb-40 mr-20 font-Bebas text-2xl uppercase md:text-3xl lg:text-4xl"
+          class="absolute bottom-44 left-4 font-Bebas text-xl uppercase md:bottom-36 lg:bottom-44 lg:left-10 lg:text-2xl xl:bottom-48 xl:text-3xl"
         >
           <span class="rounded-lg border-2 border-green-400 p-1"
             >Daily Classes from 8am to 23pm</span
           >
         </p>
         <h2
-          class="absolute mb-20 mr-20 font-Bebas text-6xl uppercase md:text-6xl lg:text-8xl"
+          class="absolute bottom-28 left-4 font-Bebas text-5xl uppercase md:bottom-20 lg:bottom-20 lg:left-10 lg:text-7xl xl:text-8xl"
         >
           Elevate your training
         </h2>
@@ -73,23 +160,23 @@
 
       <section
         id="personal-training"
-        class="mx-auto mt-20 flex h-main w-2/4 flex-col items-center justify-end gap-y-10"
+        class="mx-auto flex h-main w-3/4 flex-col items-start justify-center gap-y-10 lg:mt-36 lg:w-2/4 lg:justify-end"
       >
         <div>
           <span
-            class="inline rounded-lg border-2 border-green-400 bg-black px-2 py-1 text-lg font-bold text-white"
+            class="lg:text-red inline rounded-lg border-2 border-green-400 bg-black px-2 py-1 font-bold text-white"
             >Personal Training</span
           >
-          <h2 class="mb-2 mt-8 font-Kanit text-3xl font-bold uppercase">
+          <h2 class="mb-2 mt-8 text-2xl font-bold uppercase sm:text-3xl">
             Achieve your fitness goals with personalized training
           </h2>
-          <p class="mb-8 w-auto">
+          <p class="mb-8">
             Our certified personal trainers will create a customized workout
             plan tailored to your needs, ensuring you get the most out of every
             session.
           </p>
           <button
-            class="rounded border-2 border-white bg-white px-2 py-1 font-bold text-black hover:bg-slate-100"
+            class="rounded border-2 border-white bg-white px-2 py-1 font-bold text-black transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-green-400 hover:bg-green-400 hover:text-white"
           >
             Contact Sales
           </button>
@@ -100,21 +187,21 @@
           </button>
         </div>
         <img
-          class="h-96 w-full rounded object-cover object-top shadow-sm"
+          class="lg:h-card h-64 w-full rounded object-cover object-top shadow-sm"
           src="../images/landing.jpg"
         />
       </section>
 
       <section
         id="group-classes"
-        class="mx-auto mt-40 flex h-main w-2/4 flex-col items-center justify-end gap-y-10"
+        class="mx-auto mt-10 flex h-main w-3/4 flex-col items-start justify-center gap-y-10 lg:mt-36 lg:w-2/4 lg:justify-end"
       >
         <div>
           <span
             class="inline rounded-lg border-2 border-green-400 bg-black px-2 py-1 text-lg font-bold text-white"
             >Group Classes</span
           >
-          <h2 class="mb-2 mt-8 font-Kanit text-3xl font-bold uppercase">
+          <h2 class="mb-2 mt-8 text-2xl font-bold uppercase sm:text-3xl">
             Embrace the power of community
           </h2>
           <p class="mb-8 w-auto">
@@ -132,7 +219,7 @@
           class="relative w-full"
           data-carousel="slide"
         >
-          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <div class="lg:h-card relative h-64 overflow-hidden rounded-lg">
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
                 src="../images/slide1.jpg"
@@ -202,10 +289,10 @@
             data-carousel-prev
           >
             <span
-              class="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-green-400 bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-green-400/70"
+              class="inline-flex h-7 w-7 items-center justify-center rounded-full border-2 border-green-400 bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-green-400 sm:h-10 sm:w-10"
             >
               <svg
-                class="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
+                class="h-2 w-2 text-white sm:h-4 sm:w-4 rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -228,10 +315,10 @@
             data-carousel-next
           >
             <span
-              class="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-green-400 bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-green-400 dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-green-400/70"
+              class="inline-flex h-7 w-7 items-center justify-center rounded-full border-2 border-green-400 bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-green-400 sm:h-10 sm:w-10"
             >
               <svg
-                class="h-4 w-4 text-white rtl:rotate-180 dark:text-gray-800"
+                class="h-2 w-2 text-white sm:h-4 sm:w-4 rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -253,10 +340,10 @@
 
       <section
         id="get-started"
-        class="mx-auto mt-20 flex h-96 w-2/4 flex-col items-center justify-center gap-y-10"
+        class="mx-auto flex h-72 w-3/4 flex-col items-center justify-center sm:w-2/4 md:h-96"
       >
         <div class="flex flex-col items-center">
-          <h2 class="mb-5 mt-8 font-Kanit text-3xl font-bold uppercase">
+          <h2 class="mb-5 mt-8 text-xl font-bold uppercase sm:text-3xl">
             Ready to
             <span class="rounded-lg border-2 border-green-400 p-1"
               >get started</span
@@ -272,10 +359,10 @@
             <input
               type="text"
               placeholder="Enter your email"
-              class="w-60 text-gray-950 caret-green-400 selection:bg-green-400"
+              class="w-40 text-gray-950 caret-green-400 selection:bg-green-400 sm:w-60"
             />
             <button
-              class="ml-3 h-full rounded bg-white px-5 py-1 font-bold text-black hover:bg-slate-100"
+              class="ml-3 h-full rounded bg-white px-4 py-1 font-bold text-black hover:bg-slate-100"
             >
               Sign Up
             </button>
@@ -284,9 +371,11 @@
       </section>
     </main>
 
-    <footer class="m-6 flex justify-between">
-      <p>©Fictional Project, this brand does not exist.</p>
-      <ul class="flex gap-x-8">
+    <footer class="m-5 flex justify-between text-xs sm:m-12 sm:text-lg">
+      <p class="w-1/2 sm:w-full">
+        ©Fictional Project, this brand does not exist.
+      </p>
+      <ul class="flex w-72 justify-between">
         <li><a href="" class="hover:text-green-400">Terms of Service</a></li>
         <li><a href="" class="hover:text-green-400">Privacy</a></li>
       </ul>
