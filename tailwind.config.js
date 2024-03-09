@@ -10,8 +10,8 @@ module.exports = {
         card: "27rem",
       },
       backgroundImage: {
-        landing: "url('../images/landing.jpg')",
-        landing2: "url('../images/landing2.jpg')",
+        landing: "url('images/landing.jpg')",
+        landing2: "url('images/landing2.jpg')",
       },
       backgroundPosition: {
         "top-4": "center -5rem",
